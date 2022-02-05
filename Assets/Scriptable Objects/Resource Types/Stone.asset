@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3083fd070500a14892e85c9cf582b73, type: 3}
-  m_Name: BuildingTypeListSO
+  m_Script: {fileID: 11500000, guid: 08bc8896ddd394c4db1bd6bfa2d7ff66, type: 3}
+  m_Name: Stone
   m_EditorClassIdentifier: 
-  buildingTypeList:
-  - {fileID: 11400000, guid: c8919af92bc31644286c8dd8fb8b6cdc, type: 2}
-  - {fileID: 11400000, guid: 8ca537fd07a28434fa2ade4cd5a13da6, type: 2}
+  nameString: Stone

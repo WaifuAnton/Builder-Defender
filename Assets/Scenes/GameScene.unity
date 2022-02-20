@@ -631,7 +631,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f121e1483f6b9804eb7da11068b0abc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cinemachineVirtualCamera: {fileID: 1190773412}
   moveSpeed: 30
+  zoomAmount: 2
+  zoomSpeed: 5
+  minOrthographicSize: 10
+  maxOrthographicSize: 30
 --- !u!4 &734020049
 Transform:
   m_ObjectHideFlags: 0

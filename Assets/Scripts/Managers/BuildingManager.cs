@@ -1,15 +1,18 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BuildingManager : MonoBehaviour
 {
+    public static BuildingManager Instance { get; private set; }
+
     BuildingTypeListSO buildingTypeList;
-    BuildingTypeSO buildingType;
+    BuildingTypeSO activeBuildingType;
     Camera mainCamera;
 
     private void Awake()
     {
+        Instance = this;
         buildingTypeList = Resources.Load<BuildingTypeListSO>(typeof(BuildingTypeListSO).Name);
-        buildingType = buildingTypeList.list[0];
     }
 
     private void Start()
@@ -19,9 +22,9 @@ public class BuildingManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
-            Instantiate(buildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+            Instantiate(activeBuildingType?.prefab, GetMouseWorldPosition(), Quaternion.identity);
         }
     }
 
@@ -30,5 +33,15 @@ public class BuildingManager : MonoBehaviour
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
         return mouseWorldPosition;
+    }
+
+    public void SetActiveBuildingType(BuildingTypeSO buildingType)
+    {
+        activeBuildingType = buildingType;
+    }
+
+    public BuildingTypeSO GetActiveBuildingType()
+    {
+        return activeBuildingType;
     }
 }

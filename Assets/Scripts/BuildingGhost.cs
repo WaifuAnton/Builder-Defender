@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildingGhost : MonoBehaviour
@@ -9,7 +6,7 @@ public class BuildingGhost : MonoBehaviour
 
     private void Awake()
     {
-        spriteGameObject = GameObject.Find("Sprite");
+        spriteGameObject = transform.GetChild(0).gameObject;
         Hide();
     }
 

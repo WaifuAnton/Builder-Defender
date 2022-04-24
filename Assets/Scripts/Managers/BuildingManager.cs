@@ -13,27 +13,17 @@ public class BuildingManager : MonoBehaviour
         public BuildingTypeSO activeBuildingType;
     }
 
-    BuildingTypeListSO buildingTypeList;
     BuildingTypeSO activeBuildingType;
-    Camera mainCamera;
 
     private void Awake()
     {
         Instance = this;
-        buildingTypeList = Resources.Load<BuildingTypeListSO>(typeof(BuildingTypeListSO).Name);
-    }
-
-    private void Start()
-    {
-        mainCamera = Camera.main;
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject() && activeBuildingType != null)
-        {
             Instantiate(activeBuildingType.prefab, Utils.GetMouseWorldPosition(), Quaternion.identity);
-        }
     }
 
     public void SetActiveBuildingType(BuildingTypeSO buildingType)

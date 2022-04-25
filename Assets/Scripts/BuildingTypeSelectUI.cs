@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class BuildingTypeSelectUI : MonoBehaviour
 {
     [SerializeField] Sprite arrowSprite;
+    [SerializeField] List<BuildingTypeSO> ignoredBuildingTypes;
     Dictionary<BuildingTypeSO, Transform> buttonTransformDictionary;
     Transform arrowButton;
 
@@ -32,6 +33,9 @@ public class BuildingTypeSelectUI : MonoBehaviour
         BuildingTypeListSO buildingTypeList = Resources.Load<BuildingTypeListSO>(typeof(BuildingTypeListSO).Name);
         foreach (BuildingTypeSO buildingType in buildingTypeList.list)
         {
+            if (ignoredBuildingTypes.Contains(buildingType))
+                continue;
+
             Transform buttonTransform = Instantiate(buttonTemplate, transform);
             buttonTransform.gameObject.SetActive(true);
             offsetAmount = 130;

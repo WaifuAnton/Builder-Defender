@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precisionMultiplier: 5
   positionOffsetY: -3
-  runOnce: 0
+  runOnce: 1
 --- !u!1 &766746179961913856
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precisionMultiplier: 5
   positionOffsetY: -1.9
-  runOnce: 0
+  runOnce: 1
 --- !u!1 &6935567414290222296
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precisionMultiplier: 5
   positionOffsetY: -3.3
-  runOnce: 0
+  runOnce: 1
 --- !u!1 &7260127690804197385
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precisionMultiplier: 5
   positionOffsetY: 0
-  runOnce: 0
+  runOnce: 1
 --- !u!1 &8976734756563553963
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,4 +535,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precisionMultiplier: 5
   positionOffsetY: -1.8
-  runOnce: 0
+  runOnce: 1

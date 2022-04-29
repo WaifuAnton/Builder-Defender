@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class SpritePositionSortingOrder : MonoBehaviour
 {
-    [SerializeField] float precisionMultiplier = 5;
+    const float precisionMultiplier = 5;
+
     [SerializeField] float positionOffsetY;
     [SerializeField] bool runOnce;
+
     SpriteRenderer spriteRenderer;
 
     private void Awake()

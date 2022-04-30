@@ -4832,7 +4832,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4850,8 +4849,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 382055491
-  m_SortingLayer: 0
+  m_SortingLayerID: 1729530337
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4980,7 +4979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: -0.7
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &3565715747615973154
 GameObject:
@@ -5143,7 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: -0.7
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &3708441840902019915
 GameObject:
@@ -5242,7 +5241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 0
+  positionOffsetY: -2.6
   runOnce: 1
 --- !u!1 &3873768898918384280
 GameObject:
@@ -5341,7 +5340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: -3
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &4703551620333191105
 GameObject:
@@ -5440,7 +5439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: -2
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &5699968318909826122
 GameObject:
@@ -5539,7 +5538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: -1.7
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &5854188996312701752
 GameObject:
@@ -5638,7 +5637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 1.8
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &5963755691253267632
 GameObject:
@@ -5737,7 +5736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 1
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &8202751431971537035
 GameObject:
@@ -5836,7 +5835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 1.3
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &8768003391090076424
 GameObject:
@@ -5935,7 +5934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 0.55
+  positionOffsetY: -5
   runOnce: 1
 --- !u!1 &8830041157585519028
 GameObject:
@@ -6034,5 +6033,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de137296f47968748a2d33543d4cf9a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffsetY: 1.3
+  positionOffsetY: -5
   runOnce: 1

@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class BuildingGhost : MonoBehaviour
 {
+    const int SPRITE_INDEX = 0, OVERLAY_INDEX = 1;
+
+    ResourceNearbyOverlay resourceNearbyOverlay;
     GameObject spriteGameObject;
 
     private void Awake()
     {
-        spriteGameObject = transform.GetChild(0).gameObject;
+        resourceNearbyOverlay = transform.GetChild(OVERLAY_INDEX).GetComponent<ResourceNearbyOverlay>();
+        spriteGameObject = transform.GetChild(SPRITE_INDEX).gameObject;
         Hide();
     }
 
@@ -34,8 +38,14 @@ public class BuildingGhost : MonoBehaviour
     void OnActiveBuildingTypeChanged(object sender, BuildingManager.OnActiveBuildingTypeChangedEventArgs e)
     {
         if (e.activeBuildingType == null)
+        {
             Hide();
+            resourceNearbyOverlay.Hide();
+        }
         else
+        {
             Show(e.activeBuildingType.sprite);
+            resourceNearbyOverlay.Show(e.activeBuildingType.resourceGeneratorData);
+        }
     }
 }

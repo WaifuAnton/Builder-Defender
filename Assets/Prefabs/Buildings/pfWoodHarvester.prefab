@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: -3773225333447889176}
   - component: {fileID: -5712934824507758112}
   - component: {fileID: 8990899433398530353}
+  - component: {fileID: 625307704047037401}
+  - component: {fileID: 7910328881342931885}
   m_Layer: 0
   m_Name: pfWoodHarvester
   m_TagString: Untagged
@@ -33,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 9190518202095984613}
   - {fileID: 3798156391867200824}
+  - {fileID: 3106989475941412238}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87,6 +90,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.032689, y: 4.13944}
   m_EdgeRadius: 0
+--- !u!114 &625307704047037401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849242054663308255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f510680876177d44a8f8fb6873e086f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7910328881342931885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849242054663308255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158a31e81e3744d49b137b73254b7cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2687985296729345694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -214,4 +241,66 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3565715747615973155, guid: a8ddac80caf74a6428bf2b24a8e001e0, type: 3}
   m_PrefabInstance: {fileID: 5688239878229967046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8370084904930280392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4849184835820506913}
+    m_Modifications:
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890951, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_Name
+      value: pfHealthBar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d282ebea183ec71468297983a61a4740, type: 3}
+--- !u!4 &3106989475941412238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+  m_PrefabInstance: {fileID: 8370084904930280392}
   m_PrefabAsset: {fileID: 0}

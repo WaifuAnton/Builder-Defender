@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: -3773225333447889176}
   - component: {fileID: -5712934824507758112}
   - component: {fileID: 8990899433398530353}
+  - component: {fileID: 178633689861391841}
+  - component: {fileID: -5312028340363060864}
   m_Layer: 0
   m_Name: pfHQ
   m_TagString: Untagged
@@ -33,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 7073577958717963464}
   - {fileID: 276873862846112296}
+  - {fileID: 7944862985703878806}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87,6 +90,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.3824577, y: 4.0932493}
   m_EdgeRadius: 0
+--- !u!114 &178633689861391841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849242054663308255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f510680876177d44a8f8fb6873e086f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5312028340363060864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4849242054663308255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158a31e81e3744d49b137b73254b7cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1310477329466743182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +175,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1294898690973580198, guid: c61883dc864a35446bd5a40299559226, type: 3}
   m_PrefabInstance: {fileID: 1310477329466743182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3564440100750270160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4849184835820506913}
+    m_Modifications:
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860879613080890951, guid: d282ebea183ec71468297983a61a4740, type: 3}
+      propertyPath: m_Name
+      value: pfHealthBar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d282ebea183ec71468297983a61a4740, type: 3}
+--- !u!4 &7944862985703878806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6860879613080890950, guid: d282ebea183ec71468297983a61a4740, type: 3}
+  m_PrefabInstance: {fileID: 3564440100750270160}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7664194192315834465
 PrefabInstance:

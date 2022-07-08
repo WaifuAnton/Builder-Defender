@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class BuildingManager : MonoBehaviour
 {
     [SerializeField] float maxConstructionRadius = 25;
+    [SerializeField] Building hqBuildiing;
 
     public static BuildingManager Instance { get; private set; }
 
@@ -24,6 +25,9 @@ public class BuildingManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.T))
+            Enemy.Create(Utils.GetMouseWorldPosition() + Utils.GetRandomDirection() * 5);
+
         if (!Input.GetMouseButtonDown(0) || EventSystem.current.IsPointerOverGameObject() || activeBuildingType == null)
             return;
 
@@ -54,11 +58,16 @@ public class BuildingManager : MonoBehaviour
         return activeBuildingType;
     }
 
+    public Building GetHQBuilding()
+    {
+        return hqBuildiing;
+    }
+
     bool CanSpawnBuilding(BuildingTypeSO buildingType, Vector2 position, out string errorMessage)
     {
         BoxCollider2D boxCollider2D = buildingType.prefab.GetComponent<BoxCollider2D>();
-        Collider2D[] colliders2D = Physics2D.OverlapBoxAll(position + boxCollider2D.offset, boxCollider2D.size, 0);
-        bool isAreaClear = colliders2D.Length == 0;
+        Collider2D[] colliders2d = Physics2D.OverlapBoxAll(position + boxCollider2D.offset, boxCollider2D.size, 0);
+        bool isAreaClear = colliders2d.Length == 0;
 
         if (!isAreaClear)
         {
@@ -66,8 +75,8 @@ public class BuildingManager : MonoBehaviour
             return false;
         }
 
-        colliders2D = Physics2D.OverlapCircleAll(position, buildingType.minConstructionRadius);
-        foreach (Collider2D collider2D in colliders2D)
+        colliders2d = Physics2D.OverlapCircleAll(position, buildingType.minConstructionRadius);
+        foreach (Collider2D collider2D in colliders2d)
         {
             BuildingTypeHolder buildingTypeHolder = collider2D.GetComponent<BuildingTypeHolder>();
             if (buildingTypeHolder == null)
@@ -79,8 +88,8 @@ public class BuildingManager : MonoBehaviour
             }
         }
 
-        colliders2D = Physics2D.OverlapCircleAll(position, maxConstructionRadius);
-        foreach (Collider2D collider2D in colliders2D)
+        colliders2d = Physics2D.OverlapCircleAll(position, maxConstructionRadius);
+        foreach (Collider2D collider2D in colliders2d)
         {
             BuildingTypeHolder buildingTypeHolder = collider2D.GetComponent<BuildingTypeHolder>();
             if (buildingTypeHolder != null)

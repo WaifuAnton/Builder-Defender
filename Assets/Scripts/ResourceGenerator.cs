@@ -50,10 +50,10 @@ public class ResourceGenerator : MonoBehaviour
 
     public static int GetNearbyResourceAmount(ResourceGeneratorData resourceGeneratorData, Vector3 position)
     {
-        Collider2D[] colliders2D = Physics2D.OverlapCircleAll(position, resourceGeneratorData.resourceDetectionRadius);
+        Collider2D[] colliders2d = Physics2D.OverlapCircleAll(position, resourceGeneratorData.resourceDetectionRadius);
         int nearbyResourceAmount = 0;
 
-        foreach (Collider2D collider2D in colliders2D)
+        foreach (Collider2D collider2D in colliders2d)
         {
             ResourceNode resourceNode = collider2D.GetComponent<ResourceNode>();
             if (resourceNode != null && resourceNode.resourceType == resourceGeneratorData.resourceType)

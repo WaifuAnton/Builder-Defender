@@ -8,11 +8,6 @@ public class HealthBar : MonoBehaviour
     HealthSystem healthSystem;
     Transform barTransform;
 
-    private void Awake()
-    {
-        
-    }
-
     private void Start()
     {
         barTransform = transform.GetChild(BAR_INDEX); barTransform = transform.GetChild(BAR_INDEX);

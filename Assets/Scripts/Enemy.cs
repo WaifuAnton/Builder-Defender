@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -10,6 +11,7 @@ public class Enemy : MonoBehaviour
     Transform targetTransform;
     Rigidbody2D rigidbody2d;
     float lookForTargetTimer;
+    HealthSystem healthSystem;
 
     public static Enemy Create(Vector3 position)
     {
@@ -23,7 +25,9 @@ public class Enemy : MonoBehaviour
     {
         targetTransform = BuildingManager.Instance.GetHQBuilding().transform;
         rigidbody2d = GetComponent<Rigidbody2D>();
-        lookForTargetTimer = Random.Range(0, lookForTargetTimerMax);
+        lookForTargetTimer = UnityEngine.Random.Range(0, lookForTargetTimerMax);
+        healthSystem = GetComponent<HealthSystem>();
+        healthSystem.OnDied += OnDied;
     }
 
     private void Update()
@@ -79,5 +83,10 @@ public class Enemy : MonoBehaviour
             lookForTargetTimer = lookForTargetTimerMax;
             LookForTargets();
         }
+    }
+
+    void OnDied(object sender, EventArgs e)
+    {
+        Destroy(gameObject);
     }
 }

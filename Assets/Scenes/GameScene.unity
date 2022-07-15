@@ -582,6 +582,7 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -1575,6 +1576,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e65ec45d3c998c44a2575e81cc1e065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingResourceAmountList:
+  - resourceType: {fileID: 11400000, guid: 750f7b2046a76b8438dd57cb832220c3, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: e0db8f6ccf6d369478f4cdcf24dcb496, type: 2}
+    amount: 100
+  - resourceType: {fileID: 11400000, guid: 7f3d65c699a564540b65400de037136e, type: 2}
+    amount: 100
 --- !u!4 &1004724016
 Transform:
   m_ObjectHideFlags: 0
@@ -1654,6 +1662,10 @@ PrefabInstance:
     - target: {fileID: 4849242054663308255, guid: e982ce70d88c67947a5343b39d37c2f4, type: 3}
       propertyPath: m_Name
       value: pfHQ
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849242054663308255, guid: e982ce70d88c67947a5343b39d37c2f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e982ce70d88c67947a5343b39d37c2f4, type: 3}
@@ -2601,6 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

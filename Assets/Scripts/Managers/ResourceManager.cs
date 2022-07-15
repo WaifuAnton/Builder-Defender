@@ -4,6 +4,8 @@ using System;
 
 public class ResourceManager : MonoBehaviour
 {
+    [SerializeField] List<ResourceAmount> startingResourceAmountList;
+
     public static ResourceManager Instance { get; private set; }
     public event EventHandler OnResourceAmountChanged;
 
@@ -14,8 +16,12 @@ public class ResourceManager : MonoBehaviour
         Instance = this;
         resourceAmountDictionary = new Dictionary<ResourceTypeSO, int>();
         ResourceTypeListSO resourceTypeList = Resources.Load<ResourceTypeListSO>(typeof(ResourceTypeListSO).Name);
+        
         foreach (ResourceTypeSO resourceType in resourceTypeList.list)
             resourceAmountDictionary[resourceType] = 0;
+
+        foreach (ResourceAmount resourceAmount in startingResourceAmountList)
+            AddResource(resourceAmount.resourceType, resourceAmount.amount);
     }
 
     public void AddResource(ResourceTypeSO resourceType, int amount)
